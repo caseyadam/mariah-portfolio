@@ -39,24 +39,6 @@ a{
   visibility: hidden;
 }
 
-.fadedText{
-  grid-column: 11/13;
-  grid-row: 4/8;
-  pointer-events: none;
-  overflow: auto;
-  font-size: 12rem;
-  opacity: 0.1;
-  position: static;
-}
-
-#mail{
-  margin-left: 2%;
-}
-
-#resume{
-  margin-left: 3.5%;
-}
-
 .icon{
   font-size: 2.3rem;
   margin: 0 .5%;
@@ -164,8 +146,32 @@ a{
         border-radius: 20px;
         border: 1px solid black;
         background-color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: #6AB4C5;
+          border: 1px solid #6AB4C5;
+        }
       }
     }
+  }
+
+  .fadedText{
+    grid-column: 11/13;
+    grid-row: 4/8;
+    pointer-events: none;
+    overflow: auto;
+    font-size: 12rem;
+    opacity: 0.1;
+    position: static;
+  }
+
+  #mail{
+    margin-left: 2%;
+  }
+
+  #resume{
+    margin-left: 3.5%;
   }
 
   #github-icon{
@@ -250,10 +256,12 @@ a{
   }
 
   #explanation-wrapper{
-    grid-column: 7/12 !important;
+    grid-column: 7/13 !important;
     grid-row: 7/10 !important;
+    padding-right: 5%;
       h3{
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 40px !important;
       }
     #explanation{
       p{
@@ -273,7 +281,6 @@ a{
     grid-column: 12/13;
     grid-row: 1/1;
     margin-top: 30%;
-    padding-right: 1%;
     font-size: 2rem;
   }
 
@@ -320,7 +327,7 @@ a{
       font-size: .6rem;
     }
     .icon{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -341,11 +348,11 @@ a{
   }
 
   #mail{
-    margin-left: 5%;
+    margin-left: 5% !important;
   }
 
   #resume{
-    margin-left: 8%;
+    margin-left: 7% !important;
   }
 
 }
