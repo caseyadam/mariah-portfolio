@@ -9,11 +9,18 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet">
   <!-- MAIN CSS -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.css">
   <!-- FONT AWESOME ICONS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- TECH ICONS -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- FULL PAGE -->
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+  <script src="js/easings.min.js"></script>
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
 
   <title>Casey</title>
 
@@ -21,11 +28,13 @@
 
 <body>
 
-  <section class='main-area' class="home">
+<div id="fullpage">
+    <div class="section">
+  <div class='main-area'>
 
-    <img src="./img/headshot.jpg" alt="headshot" id="side-image"></img>
-    <img src="./img/headshot-mobile.png" alt="headshot" id="side-image-mobile"></img>
-    <img src="./img/headshot-tablet.jpg" alt="headshot" id="side-image-tablet"></img>
+    <img src="./img/code4.jpg" alt="computer" id="side-image" />
+    <img src="./img/code4-175.jpg" alt="computer" id="side-image-mobile" />
+    <img src="./img/code4-620.jpg" alt="computer" id="side-image-tablet" />
 
     <div id="title-text">
       <h3>HELLO FRIENDS</h3>
@@ -40,16 +49,15 @@
     <div id="explanation-wrapper">
       <h3 id="explanation-title">INTRODUCTION</h3>
       <div id="explanation">
-        <p>I am a freelance, front end web developer living in San Diego.</p>
+        <p>I am a web developer living in San Diego.</p>
         <p>
           Scroll down to view client/personal projects I built and the technologies used to create them.
         </p>
-        <p>If you want to know more about me or my work, please contact me at caseymoths[at]outlook.com.</p>
+        <p>If you want to know more about me or my work, please contact me at moths.casey[at]gmail.com.</p>
       </div>
     </div>
 
-
-    <label class="dropdown">
+    <!-- <label class="dropdown">
       <div class="dd-button">
         PROJECTS
       </div>
@@ -58,11 +66,12 @@
         <li><a href="#parkside-section">Parkside Apts</a></li>
         <li><a href="#restaurant-section">Kuroki Sushi</a></li>
         <li><a href="#surf-section">Leonidas</a></li>
+        <li><a href="#githubApp-section">Github Search</a></li>
         <li class="divider"></li>
         <li><a href="#contact-section">Contact</a></li>
         <li><a href="#about-section">About Me</a></li>
       </ul>
-    </label>
+    </label> -->
 
     <h1 class="fadedText">Casey</h1>
 
@@ -73,15 +82,17 @@
       <li id="linkedin"><a href="https://www.linkedin.com/in/caseymoths/" target="_blank">LINKEDIN</a></li>
     </ul>
 
-  </section>
-
+  </div>
+</div>
 <!-- PROJECT 1: PARKSIDE -->
-  <section class='main-area'>
+<div class="section">
+  <div class='main-area'>
+
     <span id="parkside-section"></span>
 
-    <img src="./img/ppa.png" alt="apartment homes" id="side-image"></img>
-    <img src="./img/ppa-mobile.jpg" alt="apartment homes" id="side-image-mobile"></img>
-    <img src="./img/ppa-tablet.png" alt="apartment homes" id="side-image-tablet"></img>
+    <img src="./img/ppa.png" alt="apartment homes" id="side-image" />
+    <img src="./img/ppa-mobile.jpg" alt="apartment homes" id="side-image-mobile" />
+    <img src="./img/ppa-tablet.png" alt="apartment homes" id="side-image-tablet" />
 
     <div id="title-text">
       <h3>PORTFOLIO</h3>
@@ -94,10 +105,10 @@
       <h3>I. Apartment Homes</h3>
       <div id="explanation">
         <p>
-          I designed and developed this responsive website for a multi-family apartment complex in Milwaukee, Wisconsin.
+          This website was designed and developed for a multi-family apartment complex in Milwaukee, Wisconsin.
         </p>
         <p>
-          The goal was to get the business online for the first time and provide potential residents the ability to quickly view information such as rooms, price ranges, location, amenities and be able to contact the property manager directly via the website.
+          It provides those looking for an apartment home the ability to view information such as room types, floor plans, price ranges, location via Google Maps, amenities and a contact form to schedule appointments.
         </p>
         <a href="http://parksidepoolapartments.com/" target="_blank"><button>VIEW</button></a>
       </div>
@@ -120,29 +131,29 @@
       <a href="http://www.php.net/" target="_blank"><i class="devicon-php-plain colored icon"></i></a>
     </div>
 
-  </section>
-
+  </div>
+</div>
 <!-- PROJECT 2: RESTAURANT -->
-  <section class='main-area' id="restaurant-section">
+<div class="section">
+  <div class='main-area' id="restaurant-section">
 
-    <img src="./img/ryuken.png" alt="plate of sushi" id="side-image"></img>
-    <img src="./img/ryuken-mobile.png" alt="plate of sushi" id="side-image-mobile"></img>
-    <img src="./img/ryuken-tablet.png" alt="plate of sushi" id="side-image-tablet"></img>
+    <img src="./img/ryuken.png" alt="plate of sushi" id="side-image" />
+    <img src="./img/ryuken-mobile.png" alt="plate of sushi" id="side-image-mobile" />
+    <img src="./img/ryuken-tablet.png" alt="plate of sushi" id="side-image-tablet" />
 
     <div id="title-text">
       <h3>PORTFOLIO</h3>
       <h1>
-        <a href="https://caseyadam.github.io/kuroki-sushi/" target="_blank">Kuroki Sushi</a>
+        <a href="http://kurokisushi.com/" target="_blank">Kuroki Sushi</a>
       </h1>
     </div>
 
     <div id="explanation-wrapper">
       <h3>II. RESTAURANT</h3>
       <div id="explanation">
-        <p>Kuroki is a personal project I built for a fictional sushi restaurant.</p>
-        <p>I developed this website to reinforce my knowledge of HTML5, CSS3 and responsive design.</p>
-        <p>I learned a great deal about what layouts lend themselves well to be responsive and to identify and plan for challenging design areas.</p>
-        <a href="https://caseyadam.github.io/kuroki-sushi/" target="_blank"><button>VIEW</button></a>
+        <p>Kuroki Sushi is a high-end restaurant serving some of the finest Japanese food.</p>
+        <p>It prides itself on promoting health as much as taste so it uses only organic fresh greens, organic brown rice, homemade stock, and locally caught wild seafood.</p>
+        <a href="http://kurokisushi.com/" target="_blank"><button>VIEW</button></a>
       </div>
     </div>
 
@@ -160,54 +171,145 @@
       <a href="https://sass-lang.com/" target="_blank"><i class="devicon-sass-original colored icon"></i></a>
     </div>
 
-  </section>
+  </div>
+</div>
+
+
 
 <!-- PROJECT 3: LEONIDAS -->
-<section class='main-area' id="surf-section">
+<div class="section">
+  <div class='main-area' id="surf-section">
 
-  <img src="./img/leonidas.jpg" alt="surfer" id="side-image"></img>
-  <img src="./img/leonidas-mobile.jpg" alt="surfer" id="side-image-mobile"></img>
-  <img src="./img/leonidas-tablet.jpg" alt="surfer" id="side-image-tablet"></img>
+    <img src="./img/leonidas.jpg" alt="surfer" id="side-image" />
+    <img src="./img/leonidas-mobile.jpg" alt="surfer" id="side-image-mobile" />
+    <img src="./img/leonidas-tablet.jpg" alt="surfer" id="side-image-tablet" />
 
-  <div id="title-text">
-    <h3>PORTFOLIO</h3>
-    <h1>
-      <a href="https://leonidas-surf-and-sport.herokuapp.com/" target="_blank">Leonidas Surf & Sport</a>
-    </h1>
-  </div>
-
-  <div id="explanation-wrapper">
-    <h3>III. E-COMMERCE</h3>
-    <div id="explanation">
-      <p> This is another personal project developed for an athletic apparel retailer. This was built to demonstrate my knowledge of React and Javascript. I wanted the user to be able to search through data with commonly used filters such as price range, search by name, and drop down menus to sort various data.</p>
-      <a href="https://leonidas-surf-and-sport.herokuapp.com/" target="_blank"><button>VIEW</button></a>
+    <div id="title-text">
+      <h3>PORTFOLIO</h3>
+      <h1>
+        <a href="https://leonidas-surf-and-sport.herokuapp.com/" target="_blank">Leonidas Surf & Sport</a>
+      </h1>
     </div>
+
+    <div id="explanation-wrapper">
+      <h3>III. E-COMMERCE</h3>
+      <div id="explanation">
+        <p> This is a full stack, single page app using Node.js, Express, React, Redux and MongoDB along with ES6+ developed for an athletic apparel retailer. Features include an extensive backend API, routes/endpoints with JWT (JSON Web Tokens), and Redux for app state management. Users are able to search through products with commonly used filters such as price range, search by name, and drop down menus to sort various data.</p>
+        <a href="https://leonidas-surf-and-sport.herokuapp.com/" target="_blank"><button>VIEW</button></a>
+      </div>
+    </div>
+
+    <a href="https://github.com/caseyadam/leonidas-surf-and-sport" target="_blank" id="github-icon"><i class="devicon-github-plain-wordmark colored"></i></a>
+
+    <h1 class="fadedText">Leon</h1>
+
+    <div id="line"></div>
+
+    <span id="powered-by">POWERED BY:</span>
+
+    <div id="tech-links">
+      <!-- <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="devicon-html5-plain-wordmark colored icon"></i></a> -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><i class="devicon-css3-plain-wordmark colored icon"></i></a>
+      <!-- <a href="https://sass-lang.com/" target="_blank"><i class="devicon-sass-original colored icon"></i></a> -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored icon"></i></a>
+      <a href="https://www.mongodb.com/" target="_blank"><i class="devicon-mongodb-plain-wordmark colored icon"></i></a>
+      <a href="https://expressjs.com/" target="_blank"><i class="devicon-express-original colored icon"></i></a>
+      <a href="https://reactjs.org/" target="_blank"><i class="devicon-react-original-wordmark colored icon"></i></a>
+      <a href="https://nodejs.org/" target="_blank"><i class="devicon-nodejs-plain-wordmark colored icon"></i></a>
+
+    </div>
+
   </div>
+</div>
 
-  <a href="https://github.com/caseyadam/leonidas-surf-and-sport" target="_blank" id="github-icon"><i class="devicon-github-plain-wordmark colored"></i></a>
+<!-- PROJECT 4: GITHUB SEARCH APP -->
+<div class="section">
+  <div class='main-area' id="githubApp-section">
 
-  <h1 class="fadedText">Leon</h1>
+    <img src="./img/github-1300.jpg" alt="github" id="side-image" />
+    <img src="./img/github-620.jpg" alt="github" id="side-image-tablet" />
+    <img src="./img/github-175.jpg" alt="github" id="side-image-mobile" />
 
-  <div id="line"></div>
+    <div id="title-text">
+      <h3>PORTFOLIO</h3>
+      <h1>
+        <a href="https://caseyadam.github.io/github-API-user-search/" target="_blank">Github Profile Finder</a>
+      </h1>
+    </div>
 
-  <span id="powered-by">POWERED BY:</span>
+    <div id="explanation-wrapper">
+      <h3>IV. WEB APP</h3>
+      <div id="explanation">
+        <p> This Javascript API project uses asynchronous request handling to retrieve and display data about Github users. It uses the latest ES6 features such as async/await, fetch, classes, and promises.</p>
+        <a href="https://caseyadam.github.io/github-API-user-search/" target="_blank"><button>VIEW</button></a>
+      </div>
+    </div>
 
-  <div id="tech-links">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="devicon-html5-plain-wordmark colored icon"></i></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><i class="devicon-css3-plain-wordmark colored icon"></i></a>
-    <a href="https://sass-lang.com/" target="_blank"><i class="devicon-sass-original colored icon"></i></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored icon"></i></a>
-    <a href="https://reactjs.org/" target="_blank"><i class="devicon-react-original-wordmark colored icon"></i></a>
+    <a href="https://github.com/caseyadam/github-API-user-search" target="_blank" id="github-icon"><i class="devicon-github-plain-wordmark colored"></i></a>
+
+    <h1 class="fadedText">Github</h1>
+
+    <div id="line"></div>
+
+    <span id="powered-by">POWERED BY:</span>
+
+    <div id="tech-links">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="devicon-html5-plain-wordmark colored icon"></i></a>
+      <a href="https://getbootstrap.com/" target="_blank"><i class="devicon-bootstrap-plain-wordmark colored icon"></i></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored icon"></i></a>
+    </div>
+
   </div>
+</div>
 
-</section>
+<!-- PROJECT 5: BITCOIN PROFITS APP -->
+<div class="section">
+  <div class='main-area' id="bitcoinApp-section">
+  
+    <img src="./img/bitcoin-1600.jpg" alt="bitcoin" id="side-image" />
+    <img src="./img/bitcoin-800.jpg" alt="bitcoin" id="side-image-tablet" />
+    <img src="./img/bitcoin-200.jpg" alt="bitcoin" id="side-image-mobile" />
+  
+    <div id="title-text">
+      <h3>PORTFOLIO</h3>
+      <h1>
+        <a href="https://bitcoin-profits-calculator.herokuapp.com/" target="_blank">Bitcoin Profits Calculator</a>
+      </h1>
+    </div>
+  
+    <div id="explanation-wrapper">
+      <h3>V. WEB APP</h3>
+      <div id="explanation">
+        <p>This web application will calculate the amount of profit or loss given a Bitcoin purchase date. It was built in React and uses an Axios API request to pull live Bitcoin prices.</p>
+        <a href="https://bitcoin-profits-calculator.herokuapp.com/" target="_blank"><button>VIEW</button></a>
+      </div>
+    </div>
+  
+    <a href="https://github.com/caseyadam/Bitcoin-Profit-Calculator" target="_blank" id="github-icon"><i class="devicon-github-plain-wordmark colored"></i></a>
+  
+    <h1 class="fadedText">Bitcoin</h1>
+  
+    <div id="line"></div>
+  
+    <span id="powered-by">POWERED BY:</span>
+  
+    <div id="tech-links">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><i class="devicon-css3-plain-wordmark colored icon"></i></a>
+      <a href="https://sass-lang.com/" target="_blank"><i class="devicon-sass-original colored icon"></i></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored icon"></i></a>
+      <a href="https://reactjs.org/" target="_blank"><i class="devicon-react-original-wordmark colored icon"></i></a>
+    </div>
+  
+  </div>
+</div>
 
 <!-- KONTACT ME -->
-<section class='main-area' id="contact-section">
+<div class="section">
+<div class='main-area' id="contact-section">
 
-  <img src="./img/sandiego.png" alt="San Diego coastline" id="side-image"></img>
-  <img src="./img/sandiego-mobile.png" alt="San Diego coastline" id="side-image-mobile"></img>
-  <img src="./img/sandiego-tablet.png" alt="San Diego coastline" id="side-image-tablet"></img>
+  <img src="./img/sandiego.png" alt="San Diego coastline" id="side-image" />
+  <img src="./img/sandiego-mobile.png" alt="San Diego coastline" id="side-image-mobile" />
+  <img src="./img/sandiego-tablet.png" alt="San Diego coastline" id="side-image-tablet" />
 
   <div id="title-text">
     <h3>CONTACT</h3>
@@ -221,7 +323,7 @@
   <div id="explanation-wrapper">
     <h3>INFORMATION</h3>
     <div id="explanation">
-      <i class="far fa-envelope"></i><span id="mail" class="contact-link">caseymoths[at]outlook.com</span>
+      <i class="far fa-envelope"></i><span id="mail" class="contact-link">moths.casey[at]gmail.com</span>
       <br />
       <i class="far fa-file-pdf"></i><a href="caseymoths-resume2018.pdf" target="_blank" id="resume" class="contact-link">Download resume</a>
       <br />
@@ -241,53 +343,158 @@
       <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="devicon-html5-plain-wordmark colored icon"></i></a>
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"><i class="devicon-css3-plain-wordmark colored icon"></i></a>
       <a href="https://sass-lang.com/" target="_blank"><i class="devicon-sass-original colored icon"></i></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored icon"></i></a>
     </div>
 
-</section>
+  </div>
+</div>
 
 <!-- ABOUT ME -->
-<section class='main-area' id="about-section">
+<div class="section">
+  <div class='main-area' id="about-section">
 
-  <img src="./img/tiltoworld.jpg" alt="Scenic photo of San Diego" id="side-image"></img>
-  <img src="./img/tiltoworld-mobile.png" alt="Scenic photo of San Diego" id="side-image-mobile"></img>
-  <img src="./img/tiltoworld-tablet.jpg" alt="Scenic photo of San Diego" id="side-image-tablet"></img>
+    <img src="./img/tiltoworld.jpg" alt="Scenic photo of San Diego" id="side-image" />
+    <img src="./img/tiltoworld-mobile.png" alt="Scenic photo of San Diego" id="side-image-mobile" />
+    <img src="./img/tiltoworld-tablet.jpg" alt="Scenic photo of San Diego" id="side-image-tablet" />
 
-  <div id="title-text">
-    <h3>A LITTLE BIT</h3>
-    <h1 class="deflated">
-      About Me
-    </h1>
-  </div>
-
-  <div id="explanation-wrapper">
-    <h3>WHAT WOULD YOU SAY
-      <br />YOU DO HERE?</h3>
-      <div id="explanation">
-        <p>
-          For me, web development is an enjoyable creative outlet where I can combine my love of tech with engaging designs.
-        </p>
-        <p>
-          In addition to my passion for web development, I train for endurance events, read, enjoy photography, and recently began studying concept art & design.
-        </p>
-      </div>
+    <div id="title-text">
+      <h3>A LITTLE BIT</h3>
+      <h1 class="deflated">
+        About Me
+      </h1>
     </div>
+
+    <div id="explanation-wrapper">
+        <h3>WHAT WOULD YOU SAY
+        <br />YOU DO HERE?</h3>
+        <div id="explanation">
+          <p>
+            For me, web development is an enjoyable creative outlet where I can combine my love of tech with engaging designs.
+          </p>
+          <p>
+            In addition to my passion for web development, I train for endurance events, read, and make concept art.
+          </p>
+        </div>
+
+
+
+        <!-- <h3>WHAT WOULD YOU SAY
+        <br />YOU DO HERE?</h3>
+        <div id="explanation">
+          <p>
+            For me, web development is an enjoyable creative outlet where I can combine my love of tech with engaging designs.
+          </p>
+          <p>
+            In addition to my passion for web development, I train for endurance events, read, and make concept art.
+          </p>
+        </div>
+      </div> -->
+    </div>
+
+    <h1 class="fadedText">ABOUT</h1>
+
+    <div id="line"></div>
+
+    <span id="powered-by">POWERED BY:</span>
+
+    <div id="tech-links">
+      <a href="https://www.onnit.com/primal-bells/?pid=309" target="_blank"><img src="./img/gorilla-bell.png" class="med-icon" /></a>
+      <a href="https://www.spartan.com/en/race/learn-more/race-types-overview?article=23" target="_blank"><img src="./img/spartan-red.png" class="med-icon" /></a>
+      <a href="http://www.runrocknroll.com/san-diego/" target="_blank"><img src="./img/marathon-icon.jpg" class="med-icon" /></a>
+      <a href="http://pixologic.com/" target="_blank"><img src="./img/zbrush.jpg" class="med-icon" /></a>
+    </div>
+
   </div>
+</div>
 
-  <h1 class="fadedText">ABOUT</h1>
+</div>
 
-  <div id="line"></div>
+<!-- <script>
+  new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true,
+    scrollHorizontally: true,
+    css3: true,
+  });
+  //methods
+  fullpage_api.setAllowScrolling(false);
+</script> -->
 
-  <span id="powered-by">POWERED BY:</span>
+<script>
+var myFullpage = new fullpage('#fullpage', {
+	//Navigation
+	menu: '#menu',
+	lockAnchors: false,
+	anchors:['firstPage', 'secondPage'],
+	navigation: false,
+	navigationPosition: 'right',
+	navigationTooltips: ['firstSlide', 'secondSlide'],
+	showActiveTooltip: false,
+	slidesNavigation: false,
+	slidesNavPosition: 'bottom',
 
-  <div id="tech-links">
-    <a href="https://www.onnit.com/primal-bells/?pid=309" target="_blank"><img src="./img/gorilla-bell.png" class="med-icon" /></a>
-    <a href="https://www.spartan.com/en/race/learn-more/race-types-overview?article=23" target="_blank"><img src="./img/spartan-red.png" class="med-icon" /></a>
-    <a href="http://www.runrocknroll.com/san-diego/" target="_blank"><img src="./img/marathon-icon.jpg" class="med-icon" /></a>
-    <a href="https://www.youtube.com/watch?v=UAMZxTcRGs8" target="_blank"><img src="./img/books-icon.png" class="med-icon" /></a>
-    <a href="http://pixologic.com/" target="_blank"><img src="./img/zbrush.jpg" class="med-icon" /></a>
-  </div>
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 600,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: false,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: false,
+	loopTop: false,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: false,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#element1, .element2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	normalScrollElementTouchThreshold: 5,
+	bigSectionsDestination: null,
 
-</section>
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	// sectionsColor : ['#ccc', '#fff'],
+	// paddingTop: '3em',
+	// paddingBottom: '10px',
+	// fixedElements: '#header, .footer',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: false,
+	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: true,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(width, height){},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+});
+</script>
 
 </body>
 </html>
