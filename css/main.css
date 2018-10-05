@@ -390,8 +390,8 @@ a:hover {
   }
   #explanation-wrapper #explanation p {
     margin: 10px 0px;
-    font-size: .6rem;
-    line-height: 1.2;
+    font-size: 13px;
+    line-height: 13px !important;
   }
   #explanation-wrapper #explanation button {
     border-radius: 20px;
@@ -399,13 +399,10 @@ a:hover {
     background-color: #fff;
   }
   #github-icon {
-    -ms-grid-column: 12;
-    -ms-grid-column-span: 1;
-    grid-column: 12/13;
-    -ms-grid-row: 1;
-    grid-row: 1/1;
-    margin-top: 30%;
     font-size: 2rem;
+    position: absolute;
+    top: -55px;
+    right: 12px;
   }
   .dropdown {
     display: none;

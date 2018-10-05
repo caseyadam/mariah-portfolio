@@ -268,8 +268,8 @@ a{
     #explanation{
       p{
         margin: 10px 0px;
-        font-size: .6rem;
-        line-height: 1.2;
+        font-size: 13px;
+        line-height: 13px !important;
       }
       button{
         border-radius: 20px;
@@ -280,10 +280,13 @@ a{
   }
 
   #github-icon{
-    grid-column: 12/13;
-    grid-row: 1/1;
-    margin-top: 30%;
+    // grid-column: 12/13;
+    // grid-row: 1/1;
+    // margin-top: 30%;
     font-size: 2rem;
+    position: absolute;
+    top: -55px;
+    right: 12px;
   }
 
   .dropdown{
@@ -297,7 +300,6 @@ a{
   .contact-link{
     line-height: 2.5 !important;
   }
-
 
   #prof-links{
     grid-column: 7/13 !important;
