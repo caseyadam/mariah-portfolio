@@ -367,7 +367,7 @@ a:hover {
     grid-row: 1/13;
   }
   h3 {
-    font-size: .5rem;
+    font-size: .8rem;
   }
   #title-text h1 {
     font-size: 2.6rem;
@@ -386,17 +386,21 @@ a:hover {
   }
   #explanation-wrapper h3 {
     margin-top: 20px;
-    margin-bottom: 40px !important;
+    margin-bottom: 10px !important;
+    font-size: 16px;
   }
   #explanation-wrapper #explanation p {
     margin: 10px 0px;
-    font-size: 13px;
-    line-height: 13px !important;
+    font-size: 18px;
+    line-height: 16px !important;
   }
   #explanation-wrapper #explanation button {
     border-radius: 20px;
     border: 1px solid black;
     background-color: #fff;
+  }
+  #explanation-wrapper #explanation .contact-link {
+    font-size: 14px;
   }
   #github-icon {
     font-size: 2rem;
@@ -412,6 +416,9 @@ a:hover {
   }
   .contact-link {
     line-height: 2.5 !important;
+  }
+  #line {
+    display: none;
   }
   #prof-links {
     -ms-grid-column: 7 !important;
